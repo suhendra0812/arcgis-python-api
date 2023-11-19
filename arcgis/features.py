@@ -3,7 +3,7 @@ from typing import Any, Dict, List, Optional
 
 import requests
 
-from auth import Auth
+from arcgis.auth import Auth
 
 
 @dataclass
