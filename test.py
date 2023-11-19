@@ -1,3 +1,4 @@
+import os
 import unittest
 
 from auth import Auth
@@ -5,9 +6,9 @@ from features import FeatureLayer
 
 
 class Test(unittest.TestCase):
-    username: str = "arcgis.ji"
-    password: str = "Jababeka1234"
-    portal_url: str = "https://tmaps.jababeka.com/arcgis"
+    username: str = os.getenv("PORTAL_USER")
+    password: str = os.getenv("PORTAL_PASS")
+    portal_url: str = os.getenv("PORTAL_URL")
     auth: Auth = Auth(portal_url, username, password)
     service_url: str = (
         f"{portal_url}/rest/services/Hosted/JSmart_Report/FeatureServer/0"
