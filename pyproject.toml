@@ -1,0 +1,10 @@
+[project]
+name = "arcgis"
+description = "ArcGIS Python API"
+authors = [
+    { name = "Suhendra", email = "suhendra0812@gmail.com" },
+]
+dynamic = ["version""]
+dependencies = [
+    "requests>=2.31.0"
+]
