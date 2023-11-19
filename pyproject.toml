@@ -8,7 +8,7 @@ description = "ArcGIS Python API"
 authors = [
     { name = "Suhendra", email = "suhendra0812@gmail.com" },
 ]
-dynamic = ["version""]
+version = "0.0.1"
 dependencies = [
     "requests>=2.31.0"
 ]

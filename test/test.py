@@ -1,8 +1,8 @@
 import os
 import unittest
 
-from auth import Auth
-from features import FeatureLayer
+from arcgis.auth import Auth
+from arcgis.features import FeatureLayer
 
 
 class Test(unittest.TestCase):
